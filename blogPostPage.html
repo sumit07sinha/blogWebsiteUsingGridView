@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blog Website</title>
+  </head>
+  <body>
+    <div class="mainContent">
+      <navbar class="header">
+        <a href="blogHomePage.html">Blog Home Page</a>
+      </navbar>
+      <div class="leftNavbar">
+        <h3>List of Topics:</h3>
+        <a href="blogHomePage.html">Nature Blog</a>
+        <a href="blogHomePage.html">Sports Blog</a>
+        <a href="blogHomePage.html">Adventurous Blog</a>
+      </div>
+      <div class="mainBody">
+        <div class="imageArea">
+          <img
+            id="natureImage"
+            src="https://picsum.photos/200"
+          />
+        </div>
+        <div class="authorDetails">
+          <u>Author Name</u>: Marley Timson <br />
+          <u>Title</u>: Nature Lover<br />
+          Current Company/School: XYZ Ltd. <br />
+          Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laborum ipsum.</br>
+
+          <em>Avatar:</em><br/>
+          <span>Share:
+            <a href="http://facebook.com">
+            <img src="data:image/png;base64,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" style="width:20px; height:20px;"></a>
+            <a href="http://twitter.com">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAACXCAMAAAAvQTlLAAAAYFBMVEUdofL///8Am/EAnfIUn/IAmfEAl/H4/f/0+v7D4/s8qvPm9P3t9/663fpJrvMlo/JnufXR6fyo1fmLyPeXzvhyvfZ+w/av2PlctPTb7vzf8v2f0vgAkvDO5ft3wPY1p/P85Ah/AAAEFUlEQVR4nO2a25KCOBBAIWmFcAlEkIsu8v9/uWEZR2eM2JjG2Yc+NVVTVlHxmHQ6nZAgYBiGYRiGYRiGYRiGYRiGYf5PwBfS8tcud4jiWOfmlKW9OlwShxr8gRTI8dBH4TdZXgr49YQe/b9m5fNS5+FvzFHempFSq5O/1lis06qyBy1LW8xiNuR0Hoe1d9QJpVa0AcVjZ82kWgYghG7M9GHdb3V9kY7D8w79dKCeaFmXbpfUw9yZjfD1kq1tpsLGWDE81QrD+HsuDATTsZ8aqnA9Bu2C1p2g9vdK5qYqiWhKVCitqJtG0S/wZfPVWP26x2BMUV42uEDIpvHpNPE9vdrXXqhRzLp/xHhsI78pKW/zaxAvun6MFnSu5FrXQxrZwfSKMTC3JtNycXaLGtVdX/8vnpnidNdmfFkKsh0uumYOnjPyvr8sJnk6L6cEjOa899O6j695GKrdEzFo3AouckzWWUQ8zDHzu2i5eh3QWvWz34ZHPvZC1CZ7R7vwbMF+1AKCZWh0jkPnaPr5iv2DtPNesyegdzUeq3Ivf1WMOK+4o6n34VlWympdiPv4xXrRlPYL0z82tZa7qxoyvqi8HDPyR6+ppksKIex2DDcfybyC8UW+jFKTt9WxQy1DYUZQe82sSZif9AokOjMhSBMSJyik3VktVe1rvQqK/rLbrlIKWSBzJoKewGrad2VhWulRtiuKhUXWbEaXmOqv6KTaNcXVEi3JKvRQ53jT0PSXwFcvOIjSBHTEXiRW04SkCviZnur0ELm1x9KSeZWYXSEaorAPiGck4eoImtDLEJ73SlwBg6KmyapfYnQjmVCej0Ph3Hu8AVmWuIoRFToV8bsPoCl0Mk2rFUyn8gR5P0efa6MBmfgnfk3/CsturvdJbbw6zdB3V1EmY1GMnVfVc6R/iQZRGGeeETaQW9lhPPs5TdAtjTcg8a7vFeUS9A3usHkBwkriB9JzLSJdse+A0ivsTxRnl07ExUOL7nTJIeYRYv6vjZfEju9qGdcBNh2yfC9bpKTloEtMHN6J/mT7KycwXTJYSbVRivjJTlxyk8Z4u89oWeSuGLV5LTSTf0rLIjr0BNgqz7us9mf0KObul28bIIMVpb7/vRKs1f6CjqyPhbwEXTsvK7k56a21IAAQ+6QZVliFatwoncI4vZCyf8Goy2bliXSGvNLzjlenBpUrNZg+W3s4Z5INxxCC9r3DwtNx2/QAsnvjnVVUbxVZd2ZCq3ULdVp7XqFCm3UriptTlfhfjsCayeJiMBkizbvP3u4Fm1ErtTwH0vY4fmwxvFeTgT6r1NFvcdrnzQib7cReqwko9KU65Mr0aZZlfT/kbd2USfDqytr2btMdcdt319vi/338YyeGYRiGYRiGYRiGYRiGYRjmxr8ZADEs7FqzGgAAAABJRU5ErkJggg==" style="width:20px; height:20px; border-radius:50%;"></a>
+              <a href="http://twitter.com">
+                <img src="data:image/png;base64,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" style="width:30px; height:20px;"></a>
+            </span> 
+        </div>
+        <div class="blogDetails">
+          <section class="blog">
+           <h2>Blog Details:</h2> 
+           <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi, quasi deleniti inventore accusamus eaque, esse optio similique provident veniam dignissimos ullam dolorum vitae praesentium velit expedita, ipsum voluptatum tenetur.
+          </h4>
+           <p> <em>Lorem ipsum dolor sit amet consectetur adipisicing elit</em>. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit corrupti dicta commodi dolorum dolores<u> voluptate tempora quasi rem eos </u>dolor amet odio sed, fuga architecto labore molestiae at nobis a! Molestiae, beatae fugiat architecto aspernatur consequuntur quibusdam totam dolores, quasi illo cum iure minima atque eaque? Dolorem nobis distinctio dolores dicta error?</p>
+          </section>
+        </div>
+      </div>
+      <div class="footer">© Copyright 2020 . All Rights Reserved.</div>
+    </div>
+  </body>
+</html>

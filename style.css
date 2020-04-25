@@ -1,0 +1,204 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.mainContent {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 60px 560px 37px;
+
+  grid-template-areas:
+    "header header"
+    "leftNavbar mainBody"
+    "footer footer";
+}
+.header {
+  grid-area: header;
+  background-color: rgb(48, 62, 100);
+}
+.header > a {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.leftNavbar {
+  grid-area: leftNavbar;
+  text-align: center;
+
+  background-color: rgb(238, 238, 238);
+}
+.leftNavbar > a {
+  display: block;
+  text-align: left;
+  margin-left: 60px;
+  line-height: 1.2em;
+}
+
+.mainBody {
+  grid-area: mainBody;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  grid-gap: 5px;
+  grid-template-areas:
+    "imageArea authorDetails"
+    "blogDetails blogDetails";
+}
+.imageArea {
+  grid-area: imageArea;
+}
+#natureImage {
+  width: 550px;
+  height: 240px;
+  margin: 5px;
+}
+.authorDetails {
+  grid-area: authorDetails;
+  margin: 5px;
+  padding: 10px;
+  line-height: 30px;
+  border-left: 2px solid black;
+}
+.blogDetails {
+  grid-area: blogDetails;
+  margin: 5px;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: rgb(48, 62, 100);
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 60px 560px 37px;
+
+  grid-template-areas:
+    "title title"
+    "leftNav blogPosts"
+    "postFooter postFooter";
+}
+.leftNav {
+  grid-area: leftNav;
+  text-align: center;
+
+  background-color: rgb(238, 238, 238);
+}
+.leftNav > a {
+  display: block;
+  text-align: left;
+  margin-left: 60px;
+  line-height: 1.2em;
+}
+.title {
+  grid-area: title;
+  background-color: rgb(48, 62, 100);
+}
+.title > a {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.blogPosts {
+  display: flex;
+  flex-direction: column;
+}
+.postRowOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.imageBox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 2px dashed blue;
+}
+.onClicked {
+  width: 250px;
+  height: 200px;
+}
+
+.postFooter {
+  grid-area: postFooter;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: rgb(48, 62, 100);
+}
+
+@media screen and (max-width: 992px) {
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto;
+
+    grid-template-areas:
+      "header "
+      "leftNavbar"
+      "mainBody"
+      "footer";
+  }
+
+  .mainBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    grid-template-areas:
+      "imageArea"
+      " authorDetails"
+      "blogDetails";
+  }
+  #natureImage {
+    width: 100%;
+  }
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto;
+
+    grid-template-areas:
+      "title"
+      "leftNav"
+      "blogPosts"
+      "postFooter";
+  }
+  .leftNav > a,
+  .leftNavbar > a {
+    text-align: center;
+    margin-left: -30px;
+    padding-top: 5px;
+  }
+  .postRowOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .imageBox {
+    position: relative;
+    width: 350px;
+    height: 170px;
+  }
+  .onClicked {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    display: block;
+    margin: 10px;
+    border-left: 5px solid blue;
+  }
+}
