@@ -42,6 +42,13 @@ body {
   margin-left: 60px;
   line-height: 1.2em;
 }
+.buttonLink {
+  margin: 10px;
+}
+.shareButton {
+  width: 20px;
+  height: 20px;
+}
 .mainBody {
   grid-area: mainBody;
   display: grid;
@@ -154,7 +161,6 @@ body {
       "mainBody"
       "footer";
   }
-
   .mainBody {
     display: grid;
     grid-template-columns: 1fr;
