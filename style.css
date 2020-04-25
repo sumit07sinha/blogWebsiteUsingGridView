@@ -42,7 +42,6 @@ body {
   margin-left: 60px;
   line-height: 1.2em;
 }
-
 .mainBody {
   grid-area: mainBody;
   display: grid;
