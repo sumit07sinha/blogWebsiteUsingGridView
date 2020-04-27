@@ -9,58 +9,123 @@
 </head>
 
 <body>
-    <div class="mainContent">
-        <navbar class="header">
-            <a href="blogHomePage.html">Blog Home Page</a>
-        </navbar>
-        <div class="leftNavbar">
+    <div class="mainContainer">
+        <header class="title">
+            <a href="blogHomePage.html">Home</a>
+        </header>
+        <div class="leftNav">
             <h3>List of Topics:</h3>
             <a href="blogHomePage.html">Nature Blog</a>
             <a href="blogHomePage.html">Sports Blog</a>
             <a href="blogHomePage.html">Adventurous Blog</a>
         </div>
-        <div class="mainBody">
-            <div class="imageArea">
-                <img id="natureImage" src="https://picsum.photos/200" alt="image" />
-                <figcaption>Fig.1 - Blog Page Image.</figcaption>
+        <div class="blogPosts">
+            <div class="postRowOne">
+                <div class="imageContainer">
+                    <img class="imageBox" src="https://picsum.photos/200" />
+                    <a href="blogPostPage.html" class="buttonLink">
+                        <button class="buttonClicked">Click To View</button>
+                    </a>
+                </div>
+                <div class="imageContainer">
+                    <img class="imageBox" src="https://picsum.photos/seed/picsum/200/300" alt="img" />
+                    <a class="buttonLink" href="blogPostPage.html">
+                        <button class="buttonClicked">Click To View</button>
+                    </a>
+                </div>
+                <div class="imageContainer">
+                    <img class="imageBox" src="https://picsum.photos/200" />
+                    <a href="blogPostPage.html" class="buttonLink">
+                        <button class="buttonClicked">Click To View</button>
+                    </a>
+                </div>
+                <div class="imageContainer">
+                    <img class="imageBox" src="https://picsum.photos/seed/picsum/200/300" alt="imgOne" />
+                    <a href="blogPostPage.html" class="buttonLink">
+                        <button class="buttonClicked">Click To View</button>
+                    </a>
+                </div>
+                <div class="imageContainer">
+                    <img class="imageBox" src="https://picsum.photos/seed/picsum/200/300" alt="imgTwo" />
+                    <a href="blogPostPage.html" class="buttonLink">
+                        <button class="buttonClicked">Click To View</button>
+                    </a>
+                </div>
+                <div class="imageContainer">
+                    <img class="imageBox" src="https://picsum.photos/200" alt="imgThree" />
+                    <a href="blogPostPage.html" class="buttonLink">
+                        <button class="buttonClicked">Click To View</button>
+                    </a>
+                </div>
+                <div class="imageContainer">
+                    <img class="imageBox" src="https://picsum.photos/seed/picsum/200/300" alt="imgFour" />
+                    <a href="blogPostPage.html" class="buttonLink">
+                        <button class="buttonClicked">Click To View</button>
+                    </a>
+                </div>
+                <div class="imageContainer">
+                    <img class="imageBox" src="https://picsum.photos/200" alt="imgFive" />
+                    <a href="blogPostPage.html" class="buttonLink">
+                        <button class="buttonClicked">Click To View</button>
+                    </a>
+                </div>
             </div>
-            <div class="authorDetails">
-
-                <u>Author Name</u>: Marley Timson
-                <br />
-                <u>Title</u>: Nature Lover
-                <br /> Current Company/School: XYZ Ltd.
-                <br /> Bio: Lorem ipsum dolor.</br>
-                <em>Avatar:</em>
-                <br/>
-                <span>Share:
-            <a href="http://facebook.com">
-            <img src="data:image/png;base64,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" alt="fb" class="shareButton"></a>
-            <a href="http://twitter.com">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAACXCAMAAAAvQTlLAAAAYFBMVEUdofL///8Am/EAnfIUn/IAmfEAl/H4/f/0+v7D4/s8qvPm9P3t9/663fpJrvMlo/JnufXR6fyo1fmLyPeXzvhyvfZ+w/av2PlctPTb7vzf8v2f0vgAkvDO5ft3wPY1p/P85Ah/AAAEFUlEQVR4nO2a25KCOBBAIWmFcAlEkIsu8v9/uWEZR2eM2JjG2Yc+NVVTVlHxmHQ6nZAgYBiGYRiGYRiGYRiGYRiGYf5PwBfS8tcud4jiWOfmlKW9OlwShxr8gRTI8dBH4TdZXgr49YQe/b9m5fNS5+FvzFHempFSq5O/1lis06qyBy1LW8xiNuR0Hoe1d9QJpVa0AcVjZ82kWgYghG7M9GHdb3V9kY7D8w79dKCeaFmXbpfUw9yZjfD1kq1tpsLGWDE81QrD+HsuDATTsZ8aqnA9Bu2C1p2g9vdK5qYqiWhKVCitqJtG0S/wZfPVWP26x2BMUV42uEDIpvHpNPE9vdrXXqhRzLp/xHhsI78pKW/zaxAvun6MFnSu5FrXQxrZwfSKMTC3JtNycXaLGtVdX/8vnpnidNdmfFkKsh0uumYOnjPyvr8sJnk6L6cEjOa899O6j695GKrdEzFo3AouckzWWUQ8zDHzu2i5eh3QWvWz34ZHPvZC1CZ7R7vwbMF+1AKCZWh0jkPnaPr5iv2DtPNesyegdzUeq3Ivf1WMOK+4o6n34VlWympdiPv4xXrRlPYL0z82tZa7qxoyvqi8HDPyR6+ppksKIex2DDcfybyC8UW+jFKTt9WxQy1DYUZQe82sSZif9AokOjMhSBMSJyik3VktVe1rvQqK/rLbrlIKWSBzJoKewGrad2VhWulRtiuKhUXWbEaXmOqv6KTaNcXVEi3JKvRQ53jT0PSXwFcvOIjSBHTEXiRW04SkCviZnur0ELm1x9KSeZWYXSEaorAPiGck4eoImtDLEJ73SlwBg6KmyapfYnQjmVCej0Ph3Hu8AVmWuIoRFToV8bsPoCl0Mk2rFUyn8gR5P0efa6MBmfgnfk3/CsturvdJbbw6zdB3V1EmY1GMnVfVc6R/iQZRGGeeETaQW9lhPPs5TdAtjTcg8a7vFeUS9A3usHkBwkriB9JzLSJdse+A0ivsTxRnl07ExUOL7nTJIeYRYv6vjZfEju9qGdcBNh2yfC9bpKTloEtMHN6J/mT7KycwXTJYSbVRivjJTlxyk8Z4u89oWeSuGLV5LTSTf0rLIjr0BNgqz7us9mf0KObul28bIIMVpb7/vRKs1f6CjqyPhbwEXTsvK7k56a21IAAQ+6QZVliFatwoncI4vZCyf8Goy2bliXSGvNLzjlenBpUrNZg+W3s4Z5INxxCC9r3DwtNx2/QAsnvjnVVUbxVZd2ZCq3ULdVp7XqFCm3UriptTlfhfjsCayeJiMBkizbvP3u4Fm1ErtTwH0vY4fmwxvFeTgT6r1NFvcdrnzQib7cReqwko9KU65Mr0aZZlfT/kbd2USfDqytr2btMdcdt319vi/338YyeGYRiGYRiGYRiGYRiGYRjmxr8ZADEs7FqzGgAAAABJRU5ErkJggg==" alt="twitter"  class="shareButton"></a>
-              <a href="http://linkedin.com">
-                <img src="data:image/png;base64,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" alt="linkedIn"  class="shareButton"></a>
-            </span>
-                <div class="card">
-                    <img class="cardImage" src="data:image/jpeg;base64,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" alt="Avatar">
-                    <div class="container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+            <div class="blogPosts">
+                <div class="postRowOne">
+                    <div class="imageContainer">
+                        <img class="imageBox" src="https://picsum.photos/200" />
+                        <a href="blogPostPage.html" class="buttonLink">
+                            <button class="buttonClicked">Click To View</button>
+                        </a>
+                    </div>
+                    <div class="imageContainer">
+                        <img class="imageBox" src="https://picsum.photos/seed/picsum/200/300" alt="img" />
+                        <a class="buttonLink" href="blogPostPage.html">
+                            <button class="buttonClicked">Click To View</button>
+                        </a>
+                    </div>
+                    <div class="imageContainer">
+                        <img class="imageBox" src="https://picsum.photos/200" />
+                        <a href="blogPostPage.html" class="buttonLink">
+                            <button class="buttonClicked">Click To View</button>
+                        </a>
+                    </div>
+                    <div class="imageContainer">
+                        <img class="imageBox" src="https://picsum.photos/seed/picsum/200/300" alt="imgOne" />
+                        <a href="blogPostPage.html" class="buttonLink">
+                            <button class="buttonClicked">Click To View</button>
+                        </a>
+                    </div>
+                    <div class="imageContainer">
+                        <img class="imageBox" src="https://picsum.photos/seed/picsum/200/300" alt="imgTwo" />
+                        <a href="blogPostPage.html" class="buttonLink">
+                            <button class="buttonClicked">Click To View</button>
+                        </a>
+                    </div>
+                    <div class="imageContainer">
+                        <img class="imageBox" src="https://picsum.photos/200" alt="imgThree" />
+                        <a href="blogPostPage.html" class="buttonLink">
+                            <button class="buttonClicked">Click To View</button>
+                        </a>
+                    </div>
+                    <div class="imageContainer">
+                        <img class="imageBox" src="https://picsum.photos/seed/picsum/200/300" alt="imgFour" />
+                        <a href="blogPostPage.html" class="buttonLink">
+                            <button class="buttonClicked">Click To View</button>
+                        </a>
+                    </div>
+                    <div class="imageContainer">
+                        <img class="imageBox" src="https://picsum.photos/200" alt="imgFive" />
+                        <a href="blogPostPage.html" class="buttonLink">
+                            <button class="buttonClicked">Click To View</button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="blogDetails">
-                <section class="blog">
-                    <h2>Blog Details:</h2>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi, quasi deleniti inventore accusamus eaque, esse optio similique provident veniam dignissimos ullam dolorum vitae praesentium velit expedita, ipsum voluptatum tenetur.
-          </h4>
-                    <p> <em>Lorem ipsum dolor sit amet consectetur adipisicing elit</em>. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit corrupti dicta commodi dolorum dolores<u> voluptate tempora quasi rem eos </u>dolor amet odio sed, fuga architecto labore molestiae at nobis a! Molestiae, beatae fugiat architecto aspernatur consequuntur quibusdam totam dolores, quasi illo cum iure minima atque eaque? Dolorem nobis distinctio dolores dicta error?</p>
-                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, cupiditate ab aliquam vero repellendus repudiandae aliquid odio esse sunt perferendis alias voluptatibus dolorem minima quam minus est magni nihil voluptate?</blockquote>
-                </section>
-            </div>
+            <footer class="postFooter">
+                © Copyright 2020 . All Rights Reserved.
+            </footer>
         </div>
-        <div class="footer">© Copyright 2020 . All Rights Reserved.</div>
-    </div>
 </body>
 
 </html>
