@@ -1,0 +1,11 @@
+.onClicked {
+  width: 250px;
+  height: 200px;
+}
+.postFooter {
+  grid-area: postFooter;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: rgb(48, 62, 100);
+}
